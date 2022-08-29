@@ -15,16 +15,7 @@ import RevenueCat
 class AppDelegate: UIResponder, UIApplicationDelegate, PurchasesDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//        Purchases.logLevel = .debug
-//        Purchases.configure(
-//            with: Configuration.Builder(withAPIKey: Constants.apiKey)
-//                .with(usesStoreKit2IfAvailable: true)
-//                .build()
-//        )
-//        Purchases.shared.delegate = self
-
         IQKeyboardManager.shared.enable = true
-        //        GADMobileAds.sharedInstance().start(completionHandler: nil)
 
         let config = Realm.Configuration(
                     schemaVersion: 3,
@@ -33,18 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PurchasesDelegate {
 
         let realm = FoodTabelRepositoryImpr()
         realm.initializeRealm()
-
-//        do {
-//            let config = Realm.Configuration(
-//                fileURL: Bundle.main.url(forResource: "seed", withExtension: "realm"),
-//                readOnly: true,
-//                schemaVersion: 1,
-//                migrationBlock: { _, _ in})
-//
-//            let realm = try Realm(configuration: config)
-//        } catch {
-//        }
-//        let realm = FoodTabelRepositoryImpr()
 
         sleep(2)
         return true

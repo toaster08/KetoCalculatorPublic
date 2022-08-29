@@ -17,17 +17,6 @@ final class FoodTabelRepositoryImpr: FoodTableRepository {
 
     init() {
         do {
-//            let config = Realm.Configuration(
-//                fileURL: Bundle.main.url(forResource: "seed", withExtension: "realm"),
-////                readOnly: true,
-//                schemaVersion: 1,
-//                migrationBlock: { _, _ in})
-
-//            let config = Realm.Configuration(
-//                schemaVersion: 1,
-//                migrationBlock: { _, _ in})
-
-//            self.realm = try Realm(configuration: config)
             self.realm = try Realm()
             print(Realm.Configuration.defaultConfiguration.fileURL)
         } catch {
@@ -36,7 +25,7 @@ final class FoodTabelRepositoryImpr: FoodTableRepository {
     }
 
     func initializeRealm() {
-        deleteRealm()
+//        deleteRealm()
         guard let defaultConfigurationFileURL =  Realm.Configuration.defaultConfiguration.fileURL,
               let seedDataFileURL =  Bundle.main.url(forResource: "seed", withExtension: "realm") else {
                   return print("FileURLが見つかりません")

@@ -1,0 +1,59 @@
+name: Google-Mobile-Ads-SDK, nameSpecified: 
+body: Copyright 2022 Googl…
+version: 9.8.0
+
+name: GoogleAppMeasurement, nameSpecified: 
+body: Copyright 2022 Googl…
+version: 9.3.0
+
+name: GoogleUserMessagingPlatform, nameSpecified: 
+body: Copyright 2021 Googl…
+version: 2.0.0
+
+name: GoogleUtilities, nameSpecified: 
+body: 
+                   …
+version: 7.7.0
+
+name: IQKeyboardManagerSwift, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 6.5.10
+
+name: LicensePlist, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 3.22.0
+
+name: nanopb, nameSpecified: 
+body: Copyright (c) 2011 P…
+version: 2.30909.0
+
+name: PromisesObjC, nameSpecified: 
+body: 
+                   …
+version: 2.1.1
+
+name: Realm, nameSpecified: 
+body: TABLE OF CONTENTS
+
+1…
+version: 10.28.3
+
+name: RealmSwift, nameSpecified: 
+body: TABLE OF CONTENTS
+
+1…
+version: 10.28.3
+
+name: RevenueCat, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 4.9.1
+
+add-version-numbers: false
+
+LicensePlist Version: 3.22.0

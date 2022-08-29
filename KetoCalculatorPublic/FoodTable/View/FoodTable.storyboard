@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SEe-wR-HUg">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About Food Table View Controller-->
+        <scene sceneID="e2G-VN-vpj">
+            <objects>
+                <viewController id="C49-ul-jVA" customClass="AboutFoodTableViewController" customModule="KetoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gg9-y9-YaU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdF-XR-CCr">
+                                <rect key="frame" x="0.0" y="66" width="414" height="742"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l8U-PI-z72">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="695"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text=" 本アプリにおける食品成分表は、2021年3月28日時点で文部科学省から提供されている『日本食品標準成分表2020年版』に基づいて表示、算出をしています。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEe-MS-chA">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                                <color key="backgroundColor" name="FoodTable Mode Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="bbA-sK-asr"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwu-PV-7NR">
+                                                <rect key="frame" x="0.0" y="150" width="414" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bf-8P-gHg">
+                                                        <rect key="frame" x="20" y="10" width="374" height="40"/>
+                                                        <color key="tintColor" red="0.51243954899999999" green="0.68804889920000001" blue="0.80001610519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Webサイトへ"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="FoodTable Mode Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="5bf-8P-gHg" secondAttribute="bottom" constant="10" id="09n-OR-aQY"/>
+                                                    <constraint firstAttribute="height" constant="60" id="5P8-HW-F2o"/>
+                                                    <constraint firstItem="5bf-8P-gHg" firstAttribute="centerX" secondItem="Dwu-PV-7NR" secondAttribute="centerX" id="8El-0l-YBU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5bf-8P-gHg" secondAttribute="trailing" constant="20" id="K2s-GV-rFD"/>
+                                                    <constraint firstItem="5bf-8P-gHg" firstAttribute="top" secondItem="Dwu-PV-7NR" secondAttribute="top" constant="10" id="Q3z-E3-leG"/>
+                                                    <constraint firstItem="5bf-8P-gHg" firstAttribute="leading" secondItem="Dwu-PV-7NR" secondAttribute="leading" constant="20" id="q0d-4e-Dys"/>
+                                                </constraints>
+                                            </view>
+                                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdI-Xr-Qie">
+                                                <rect key="frame" x="0.0" y="220" width="414" height="475"/>
+                                                <color key="backgroundColor" name="FoodTable Mode Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="470" id="KNG-hv-ttr"/>
+                                                </constraints>
+                                                <string key="text">ただし、食物繊維に関しては水溶性、不溶性を合算した合計値、糖質に関しては炭水化物量から食物繊維量を差し引いた値として求めています。
+
+またケトン体の産生を目的とした指標であるケトン比、ケトン指数、ケトン値に関しては次のように算出をしています。
+
+ケトン比：
+脂質 ÷（たんぱく質＋炭水化物）
+
+ケトン指数：
+（ 0.9 × 脂質 + 0.46 × たんぱく質 ）÷（ 炭水化物 + 0.1 × 脂質 + 0.58 × たんぱく質 ）
+
+ケトン値：
+（ 0.9 × 脂質 + 0.46 × たんぱく質 ）÷（ 糖質 ＋ 0.1 × 脂質 ＋ 0.58 × たんぱく質 ）</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="l8U-PI-z72" firstAttribute="leading" secondItem="ZdF-XR-CCr" secondAttribute="leading" id="9yY-nV-01d"/>
+                                    <constraint firstItem="l8U-PI-z72" firstAttribute="width" secondItem="ZdF-XR-CCr" secondAttribute="width" id="F9b-lX-Icd"/>
+                                    <constraint firstAttribute="trailing" secondItem="l8U-PI-z72" secondAttribute="trailing" id="JHo-YU-rAC"/>
+                                    <constraint firstAttribute="bottom" secondItem="l8U-PI-z72" secondAttribute="bottom" id="Yz8-fA-5Xp"/>
+                                    <constraint firstItem="l8U-PI-z72" firstAttribute="top" secondItem="ZdF-XR-CCr" secondAttribute="top" id="aAz-yx-pQH"/>
+                                </constraints>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bb-gA-SJY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <items>
+                                    <navigationItem title="食品成分表について" id="67h-ua-3ku"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pQz-cg-0au"/>
+                        <color key="backgroundColor" name="FoodTable Mode Color"/>
+                        <constraints>
+                            <constraint firstItem="ZdF-XR-CCr" firstAttribute="trailing" secondItem="pQz-cg-0au" secondAttribute="trailing" id="3v3-bU-ATP"/>
+                            <constraint firstItem="ZdF-XR-CCr" firstAttribute="centerX" secondItem="gg9-y9-YaU" secondAttribute="centerX" id="R6h-bj-6II"/>
+                            <constraint firstAttribute="trailing" secondItem="9bb-gA-SJY" secondAttribute="trailing" id="UcM-v4-bBZ"/>
+                            <constraint firstItem="9bb-gA-SJY" firstAttribute="leading" secondItem="pQz-cg-0au" secondAttribute="leading" id="dqj-2Y-vnQ"/>
+                            <constraint firstItem="ZdF-XR-CCr" firstAttribute="bottom" secondItem="pQz-cg-0au" secondAttribute="bottom" id="o8n-EW-jmZ"/>
+                            <constraint firstItem="9bb-gA-SJY" firstAttribute="top" secondItem="pQz-cg-0au" secondAttribute="top" id="qQ3-aV-ncI"/>
+                            <constraint firstItem="ZdF-XR-CCr" firstAttribute="leading" secondItem="pQz-cg-0au" secondAttribute="leading" id="vA5-Zm-MXu"/>
+                            <constraint firstItem="ZdF-XR-CCr" firstAttribute="top" secondItem="9bb-gA-SJY" secondAttribute="bottom" constant="10" id="yEW-N2-m7t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="foodTableButton" destination="5bf-8P-gHg" id="RXk-fc-gJe"/>
+                        <outlet property="formerTextView" destination="QEe-MS-chA" id="FHK-0D-Ovi"/>
+                        <outlet property="latterTextView" destination="RdI-Xr-Qie" id="sQE-NK-2TP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gzk-lv-Ef5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1174" y="-1492"/>
+        </scene>
+        <!--たべもの-->
+        <scene sceneID="Lo0-pX-XgD">
+            <objects>
+                <viewController id="KNP-6g-s5r" customClass="FoodTableViewController" customModule="KetoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8aw-JX-G0r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="C1A-BD-fGy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="724"/>
+                                <color key="backgroundColor" name="FoodTable Mode Color"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="-1" maxX="0.0" maxY="0.0"/>
+                                <segmentedControl key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="tZG-Kn-KfW">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <segments>
+                                        <segment title="ケトン比"/>
+                                        <segment title="ケトン指数"/>
+                                        <segment title="ケトン値"/>
+                                    </segments>
+                                </segmentedControl>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CzW-ry-XxJ">
+                                        <rect key="frame" x="0.0" y="76.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CzW-ry-XxJ" id="9DY-na-KK3">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tgI-x9-ajc" kind="show" identifier="toCompositionDetailVC" id="97V-bW-hkm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZv-wL-QCW">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ori-db-eV4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="yKF-RI-LAP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Z7-Vc-xYX"/>
+                        <color key="backgroundColor" name="FoodTable Mode Color"/>
+                        <constraints>
+                            <constraint firstItem="7Z7-Vc-xYX" firstAttribute="bottom" secondItem="xZv-wL-QCW" secondAttribute="bottom" id="EIn-zl-JXe"/>
+                            <constraint firstItem="xZv-wL-QCW" firstAttribute="trailing" secondItem="7Z7-Vc-xYX" secondAttribute="trailing" id="VXX-Cn-4zj"/>
+                            <constraint firstItem="C1A-BD-fGy" firstAttribute="leading" secondItem="7Z7-Vc-xYX" secondAttribute="leading" id="Yos-9J-MwQ"/>
+                            <constraint firstItem="7Z7-Vc-xYX" firstAttribute="trailing" secondItem="C1A-BD-fGy" secondAttribute="trailing" id="hVj-LC-JTM"/>
+                            <constraint firstItem="xZv-wL-QCW" firstAttribute="leading" secondItem="7Z7-Vc-xYX" secondAttribute="leading" id="pfv-gi-Ue0"/>
+                            <constraint firstItem="C1A-BD-fGy" firstAttribute="top" secondItem="7Z7-Vc-xYX" secondAttribute="top" id="sOM-Xf-KJM"/>
+                            <constraint firstItem="xZv-wL-QCW" firstAttribute="top" secondItem="C1A-BD-fGy" secondAttribute="bottom" id="zBC-yn-4A8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="たべもの" image="list.dash" catalog="system" id="5NN-Hm-3Cc"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="iIj-bY-bRE">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" id="Rct-la-zbe">
+                            <imageReference key="image" image="info" catalog="system" symbolScale="default"/>
+                            <color key="tintColor" name="Button Link Color"/>
+                            <connections>
+                                <segue destination="C49-ul-jVA" kind="presentation" id="wHG-0I-5he"/>
+                            </connections>
+                        </barButtonItem>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="M7l-8G-zgQ">
+                            <rect key="frame" x="81" y="6" width="253" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="食品成分表"/>
+                                <segment title="お気に入り"/>
+                            </segments>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="献立" id="gec-WU-eVF">
+                            <color key="tintColor" name="Button Link Color"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aboutTableInfomation" destination="Rct-la-zbe" id="v7S-s8-x0v"/>
+                        <outlet property="bannerParentView" destination="xZv-wL-QCW" id="iPV-aK-Yoa"/>
+                        <outlet property="foodListSegemetedControl" destination="M7l-8G-zgQ" id="Lxb-PV-Fgm"/>
+                        <outlet property="ketogenicTypeSegmentedControl" destination="tZG-Kn-KfW" id="h10-SU-Gj1"/>
+                        <outlet property="makeRecipeBarButton" destination="gec-WU-eVF" id="io0-Nx-PGb"/>
+                        <outlet property="tableView" destination="C1A-BD-fGy" id="L9s-lt-GTc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pP7-eH-tO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1198.5507246376812" y="-805.58035714285711"/>
+        </scene>
+        <!--食品成分表-->
+        <scene sceneID="1vU-fw-eS9">
+            <objects>
+                <navigationController id="SEe-wR-HUg" customClass="FoodTableNavigationController" customModule="KetoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="lf2-lI-Mxi"/>
+                    <navigationItem key="navigationItem" title="食品成分表" largeTitleDisplayMode="always" id="q4Y-va-8Fw"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="sQ3-i8-ybd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dUE-X5-Qwi">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="KNP-6g-s5r" kind="relationship" relationship="rootViewController" id="lZZ-Ny-alN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPf-O9-Dd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1918" y="-805"/>
+        </scene>
+        <!--Select Food Table View Cotroller-->
+        <scene sceneID="Rbv-iV-Ltc">
+            <objects>
+                <viewController storyboardIdentifier="SelectFoodTableViewCotroller" id="cSE-Iu-0Px" customClass="SelectFoodTableViewCotroller" customModule="KetoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HN0-wb-3jc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lYh-Kz-nqg">
+                                <rect key="frame" x="30" y="59" width="364" height="48.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="ケトン指数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="dyr-69-SlJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="48.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="127" id="Pyr-47-dcQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" name="White String Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="3.89" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="zOI-Rs-DkW">
+                                        <rect key="frame" x="147" y="0.0" width="80" height="48.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="QuB-ra-kxN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" name="White String Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5M-nz-85W">
+                                        <rect key="frame" x="247" y="0.0" width="48.5" height="48.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="X5M-nz-85W" secondAttribute="height" id="dDT-Um-m2m"/>
+                                        </constraints>
+                                        <buttonConfiguration key="configuration" style="filled" image="list.bullet.rectangle.fill" catalog="system">
+                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og3-qf-MEm">
+                                        <rect key="frame" x="315.5" y="0.0" width="48.5" height="48.5"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="trash.fill" catalog="system">
+                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Og3-qf-MEm" firstAttribute="width" secondItem="Og3-qf-MEm" secondAttribute="height" id="g8i-77-j5w"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RC1-lO-Bbg">
+                                <rect key="frame" x="0.0" y="122.5" width="414" height="739.5"/>
+                                <color key="backgroundColor" name="SelectFoodTable Color"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" name="SelectFoodTable Color"/>
+                                <color key="sectionIndexTrackingBackgroundColor" name="SelectFoodTable Color"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oMZ-nJ-Dki"/>
+                        <color key="backgroundColor" name="SelectFoodTable Color"/>
+                        <constraints>
+                            <constraint firstItem="RC1-lO-Bbg" firstAttribute="bottom" secondItem="oMZ-nJ-Dki" secondAttribute="bottom" id="04Z-Si-ecM"/>
+                            <constraint firstItem="RC1-lO-Bbg" firstAttribute="leading" secondItem="oMZ-nJ-Dki" secondAttribute="leading" id="Ao6-Bw-iqO"/>
+                            <constraint firstItem="oMZ-nJ-Dki" firstAttribute="trailing" secondItem="lYh-Kz-nqg" secondAttribute="trailing" constant="20" id="O66-RY-s10"/>
+                            <constraint firstItem="RC1-lO-Bbg" firstAttribute="trailing" secondItem="oMZ-nJ-Dki" secondAttribute="trailing" id="vDZ-5F-32T"/>
+                            <constraint firstItem="RC1-lO-Bbg" firstAttribute="top" secondItem="lYh-Kz-nqg" secondAttribute="bottom" constant="15" id="y6C-6g-bA7"/>
+                            <constraint firstItem="lYh-Kz-nqg" firstAttribute="top" secondItem="oMZ-nJ-Dki" secondAttribute="top" constant="15" id="yUP-qI-acZ"/>
+                            <constraint firstItem="lYh-Kz-nqg" firstAttribute="leading" secondItem="oMZ-nJ-Dki" secondAttribute="leading" constant="30" id="zGs-cL-Vuc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ketogenicTypeLabel" destination="dyr-69-SlJ" id="dQh-Tm-gbX"/>
+                        <outlet property="ketogenicTypeValueLabel" destination="zOI-Rs-DkW" id="uVb-lB-zRo"/>
+                        <outlet property="recipeDetailButton" destination="X5M-nz-85W" id="Yzx-z3-PiB"/>
+                        <outlet property="resetSelectFoodButton" destination="Og3-qf-MEm" id="XiI-aP-sYr"/>
+                        <outlet property="selectFoodTableView" destination="RC1-lO-Bbg" id="yKn-1l-mZh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vIe-4s-JHw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1200" y="-133.25892857142856"/>
+        </scene>
+        <!--詳細-->
+        <scene sceneID="E7u-K1-4CK">
+            <objects>
+                <viewController storyboardIdentifier="FoodDetailViewController" id="tgI-x9-ajc" customClass="FoodDetailViewController" customModule="KetoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Xx-01-oFX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsC-9h-1hG">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <connections>
+                                    <segue destination="ntD-Q0-rp7" kind="embed" identifier="EmbedSegue" id="ZXb-bH-W8t"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2k1-Hl-T51"/>
+                        <color key="backgroundColor" name="FoodTable Mode Color"/>
+                        <constraints>
+                            <constraint firstItem="2k1-Hl-T51" firstAttribute="trailing" secondItem="fsC-9h-1hG" secondAttribute="trailing" id="F1d-FA-enq"/>
+                            <constraint firstItem="fsC-9h-1hG" firstAttribute="leading" secondItem="2k1-Hl-T51" secondAttribute="leading" id="Kj3-Ce-xma"/>
+                            <constraint firstItem="2k1-Hl-T51" firstAttribute="bottom" secondItem="fsC-9h-1hG" secondAttribute="bottom" id="ccj-gH-I4L"/>
+                            <constraint firstItem="fsC-9h-1hG" firstAttribute="top" secondItem="2k1-Hl-T51" secondAttribute="top" id="fTo-j6-8mK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="詳細" largeTitleDisplayMode="always" id="Cb6-YO-mLP">
+                        <rightBarButtonItems>
+                            <barButtonItem title="追加" id="hDT-Vm-ArY">
+                                <color key="tintColor" name="Button Link Color"/>
+                            </barButtonItem>
+                            <barButtonItem title="コピー" image="doc.text" catalog="system" id="g61-s5-u9F">
+                                <color key="tintColor" name="Button Link Color"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addFoodBarButton" destination="hDT-Vm-ArY" id="EyC-AR-syt"/>
+                        <outlet property="copyBarButton" destination="g61-s5-u9F" id="nez-l7-6Lg"/>
+                        <outlet property="tableView" destination="t52-Ro-l6w" id="vrT-7n-hif"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ln-14-gIs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-490" y="-806"/>
+        </scene>
+        <!--Food Detail View Container-->
+        <scene sceneID="Z5O-WT-5Y3">
+            <objects>
+                <viewController id="ntD-Q0-rp7" customClass="FoodDetailViewContainer" customModule="KetoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CKR-gS-qRZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="t52-Ro-l6w">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
+                                <color key="backgroundColor" name="FoodTable Mode Color"/>
+                                <color key="sectionIndexBackgroundColor" name="FoodTable Mode Color"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCell" id="aay-fI-1ei">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DetailCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aay-fI-1ei" id="TAO-qV-etc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" name="FoodTable Mode Color"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="FoodTable Cell Mode Color"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c3i-7s-gXN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="t52-Ro-l6w" firstAttribute="top" secondItem="CKR-gS-qRZ" secondAttribute="top" id="3Ev-e9-QFM"/>
+                            <constraint firstItem="t52-Ro-l6w" firstAttribute="leading" secondItem="CKR-gS-qRZ" secondAttribute="leading" id="NQ0-gt-8gg"/>
+                            <constraint firstAttribute="trailing" secondItem="t52-Ro-l6w" secondAttribute="trailing" id="XqM-e5-jZZ"/>
+                            <constraint firstAttribute="bottom" secondItem="t52-Ro-l6w" secondAttribute="bottom" id="dJx-5J-MDX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="t52-Ro-l6w" id="fOr-X1-0IV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XXm-AV-My5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="-483"/>
+        </scene>
+        <!--詳細-->
+        <scene sceneID="iyw-A5-2VC">
+            <objects>
+                <viewController storyboardIdentifier="DetailFromContainerViewController" id="CX4-9P-Sue" customClass="DetailFromContainerViewController" customModule="KetoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y1v-J6-C2h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8x-z2-kGF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <connections>
+                                    <segue destination="ntD-Q0-rp7" kind="embed" id="Gzs-Bv-XuV"/>
+                                </connections>
+                            </containerView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Df9-dp-yWS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="詳細" id="558-ot-mTb">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="doc.text" catalog="system" id="aao-8D-lri"/>
+                                    </navigationItem>
+                                </items>
+                                <navigationBarAppearance key="standardAppearance"/>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jbE-FM-6G6"/>
+                        <color key="backgroundColor" name="FoodTable Mode Color"/>
+                        <constraints>
+                            <constraint firstItem="a8x-z2-kGF" firstAttribute="leading" secondItem="jbE-FM-6G6" secondAttribute="leading" id="08P-sI-7pm"/>
+                            <constraint firstItem="jbE-FM-6G6" firstAttribute="bottom" secondItem="a8x-z2-kGF" secondAttribute="bottom" id="Cax-a3-mYf"/>
+                            <constraint firstItem="Df9-dp-yWS" firstAttribute="top" secondItem="jbE-FM-6G6" secondAttribute="top" id="HFH-BQ-0Q4"/>
+                            <constraint firstItem="a8x-z2-kGF" firstAttribute="top" secondItem="Df9-dp-yWS" secondAttribute="bottom" id="ghu-YT-TJV"/>
+                            <constraint firstItem="Df9-dp-yWS" firstAttribute="trailing" secondItem="jbE-FM-6G6" secondAttribute="trailing" id="jAm-Q2-1OM"/>
+                            <constraint firstItem="jbE-FM-6G6" firstAttribute="trailing" secondItem="a8x-z2-kGF" secondAttribute="trailing" id="oPe-se-1kD"/>
+                            <constraint firstItem="Df9-dp-yWS" firstAttribute="leading" secondItem="jbE-FM-6G6" secondAttribute="leading" id="rnp-8Z-4mC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="詳細" id="I6H-Q8-U55">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="doc.text" catalog="system" id="xCb-e9-CYu"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="copyBarButton" destination="aao-8D-lri" id="S0A-4k-SCS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x2N-3c-BNz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-491" y="-133"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZXb-bH-W8t"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="doc.text" catalog="system" width="115" height="128"/>
+        <image name="info" catalog="system" width="93" height="128"/>
+        <image name="list.bullet.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="trash.fill" catalog="system" width="121" height="128"/>
+        <namedColor name="Button Link Color">
+            <color red="0.03500000387430191" green="0.51800000667572021" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FoodTable Cell Mode Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FoodTable Mode Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SelectFoodTable Color">
+            <color red="0.77600002288818359" green="0.83099997043609619" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="White String Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

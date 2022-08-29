@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2uH-mr-nQf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Expression Description View Controller-->
+        <scene sceneID="nsO-VH-3Cd">
+            <objects>
+                <viewController storyboardIdentifier="ExpressionDescriptionViewController" id="Yze-1T-ezv" customClass="ExpressionDescriptionViewController" customModule="KetoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QPy-il-Tv8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BP-dI-6BD">
+                                <rect key="frame" x="0.0" y="88" width="414" height="744"/>
+                                <color key="backgroundColor" name="Setting Mode Color"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">本アプリにおいては診断と治療者より発刊されている『治療のための継続できるケトン食レシピ』での扱いに準じています。炭水化物は糖質+食物繊維を指すものとして扱うものとしています。
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="ケトン比">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">：
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="脂質 ÷（たんぱく質＋炭水化物）">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864602376674" green="0.67193233605587122" blue="0.19085913817392969" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="15"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="15"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="ケトン指数">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">：
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="（">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" 0.9 × ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="脂質">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" + 0.46 × ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="たんぱく質">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="）">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="÷">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="（">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="炭水化物">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" + 0.1 × ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="脂質">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" + 0.58 × ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="たんぱく質">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="）">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="ケトン値">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">：
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="（">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" 0.9 × ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="脂質">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" + 0.46 × ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="たんぱく質">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="）">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="÷">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="（">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="糖質">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="＋">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" 0.1 × ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="脂質">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="＋">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" 0.58 × ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="たんぱく質">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="）">
+                                        <attributes>
+                                            <color key="NSColor" red="0.44397864599999998" green="0.67193233610000003" blue="0.1908591382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <font key="NSOriginalFont" size="15" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+また目標値に対する脂質量の過不足は上記計算式を元に変形して求められます。
+ 目標値とするケトン指標の値を左辺に、既知のたんぱく質および炭水化物（もしくは糖質）を右辺に代入することで、その目標値の際の脂質量が求められます。この脂質量と、すでに知られている脂質量の差を過不足として表示しています。
+
+エネルギー量はアトウォーター係数（Atwater system）を元に、
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">・たんぱく質　4kcal/g
+・脂質　　　　9kcal/g
+・炭水化物　　4kcal/g</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+（および糖質）
+として計算をしています。</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FJ7-Tm-aaD"/>
+                        <color key="backgroundColor" name="Setting Mode Color"/>
+                        <constraints>
+                            <constraint firstItem="2BP-dI-6BD" firstAttribute="leading" secondItem="FJ7-Tm-aaD" secondAttribute="leading" id="1gK-YV-sK4"/>
+                            <constraint firstItem="2BP-dI-6BD" firstAttribute="top" secondItem="FJ7-Tm-aaD" secondAttribute="top" id="TYf-fy-mYo"/>
+                            <constraint firstItem="FJ7-Tm-aaD" firstAttribute="trailing" secondItem="2BP-dI-6BD" secondAttribute="trailing" id="Uib-pU-hbr"/>
+                            <constraint firstItem="FJ7-Tm-aaD" firstAttribute="bottom" secondItem="2BP-dI-6BD" secondAttribute="bottom" constant="30" id="uPJ-te-ZDO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="NaS-VM-Yp0"/>
+                    <connections>
+                        <outlet property="expressionTextView" destination="2BP-dI-6BD" id="IJm-yu-4gF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gyR-cN-CFd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="839"/>
+        </scene>
+        <!--Setting Navigation View Controller-->
+        <scene sceneID="3QA-xR-aw6">
+            <objects>
+                <navigationController id="2uH-mr-nQf" customClass="SettingNavigationViewController" customModule="KetoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="D4p-Ol-U6Q">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nuU-09-Ldm" kind="relationship" relationship="rootViewController" id="9ur-vZ-w4A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ejA-PG-p5n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2201" y="1142"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="gYL-8f-Z89">
+            <objects>
+                <viewController storyboardIdentifier="SettingVC" id="nuU-09-Ldm" userLabel="Setting" customClass="SettingViewController" customModule="KetoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YvT-Ig-x9y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lT-iS-nzd">
+                                <rect key="frame" x="15" y="140" width="384" height="756"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="07D-7x-FtC">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="847"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAG-fS-cXb" userLabel="SpaceView">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="0.0"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="uqu-vh-mvJ"/>
+                                                    <constraint firstAttribute="height" id="vlE-AA-KYA"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGZ-Gp-kYM">
+                                                <rect key="frame" x="0.0" y="25" width="384" height="70"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oLv-dw-1Wz">
+                                                        <rect key="frame" x="15" y="20" width="354" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最初" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uyg-DI-PjR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="57" height="30"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                                <color key="textColor" name="White String Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vfg-jN-vhH">
+                                                                <rect key="frame" x="72" y="0.0" width="282" height="31"/>
+                                                                <segments>
+                                                                    <segment title="ケトン比"/>
+                                                                    <segment title="ケトン指数"/>
+                                                                    <segment title="ケトン値"/>
+                                                                </segments>
+                                                            </segmentedControl>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="Blue Color"/>
+                                                <constraints>
+                                                    <constraint firstItem="oLv-dw-1Wz" firstAttribute="top" secondItem="EGZ-Gp-kYM" secondAttribute="top" constant="20" id="5db-m5-PCq"/>
+                                                    <constraint firstAttribute="height" constant="70" id="7tr-aT-JLy"/>
+                                                    <constraint firstItem="oLv-dw-1Wz" firstAttribute="leading" secondItem="EGZ-Gp-kYM" secondAttribute="leading" constant="15" id="CZ4-TN-q6z"/>
+                                                    <constraint firstItem="Vfg-jN-vhH" firstAttribute="width" secondItem="EGZ-Gp-kYM" secondAttribute="width" multiplier="0.734259" id="Waa-AC-0Pc"/>
+                                                    <constraint firstItem="oLv-dw-1Wz" firstAttribute="centerY" secondItem="EGZ-Gp-kYM" secondAttribute="centerY" id="u29-li-hMf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oLv-dw-1Wz" secondAttribute="trailing" constant="15" id="uAW-jf-MAq"/>
+                                                    <constraint firstItem="oLv-dw-1Wz" firstAttribute="centerX" secondItem="EGZ-Gp-kYM" secondAttribute="centerX" id="xO2-8F-b4P"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dca-cU-hPG">
+                                                <rect key="frame" x="0.0" y="120" width="384" height="223"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目標値" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Oyc-YQ-5Gy" userLabel="Target String Label">
+                                                        <rect key="frame" x="15" y="20" width="111.5" height="30"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <color key="textColor" name="White String Color"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rdO-g2-FQp" userLabel="Index Number Setiing Stack View">
+                                                        <rect key="frame" x="15" y="65" width="354" height="138"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="crX-e3-vNg" userLabel="Ketogenic Ratio Stack View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="ケトン比　" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="X93-9g-9mI" userLabel="ケトン比">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="34"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                        <color key="textColor" name="White String Color"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="4" stepValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="aYw-BP-Q9b">
+                                                                        <rect key="frame" x="159" y="0.0" width="94" height="34"/>
+                                                                    </stepper>
+                                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wst-E8-cd9">
+                                                                        <rect key="frame" x="300.5" y="0.0" width="53.5" height="34"/>
+                                                                        <color key="backgroundColor" name="Base Color"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WQG-xW-Qv5" userLabel="Ketogenic Index Stack View">
+                                                                <rect key="frame" x="0.0" y="54" width="354" height="32"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="ケトン指数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="a6k-Ex-P0A">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="32"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                        <color key="textColor" name="White String Color"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="4" stepValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="iso-zL-ANX">
+                                                                        <rect key="frame" x="159" y="0.0" width="94" height="32"/>
+                                                                    </stepper>
+                                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PEm-Jm-7jl">
+                                                                        <rect key="frame" x="300.5" y="0.0" width="53.5" height="32"/>
+                                                                        <color key="backgroundColor" name="Base Color"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LnS-vJ-8zH" userLabel="Ketogenic Value Stack View">
+                                                                <rect key="frame" x="0.0" y="106" width="354" height="32"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="ケトン値　" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ygu-Uf-C5z">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="32"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                        <color key="textColor" name="White String Color"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="4" stepValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="mxi-vX-VDG">
+                                                                        <rect key="frame" x="159" y="0.0" width="94" height="32"/>
+                                                                    </stepper>
+                                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sr0-UM-koj">
+                                                                        <rect key="frame" x="300.5" y="0.0" width="53.5" height="32"/>
+                                                                        <color key="backgroundColor" name="Base Color"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="Blue Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="rdO-g2-FQp" secondAttribute="bottom" constant="20" id="BSk-iX-57E"/>
+                                                    <constraint firstItem="wst-E8-cd9" firstAttribute="width" secondItem="Dca-cU-hPG" secondAttribute="width" multiplier="0.138889" id="GGb-Yp-sjZ"/>
+                                                    <constraint firstItem="rdO-g2-FQp" firstAttribute="leading" secondItem="Dca-cU-hPG" secondAttribute="leading" constant="15" id="WsZ-Cm-GLL"/>
+                                                    <constraint firstItem="sr0-UM-koj" firstAttribute="width" secondItem="Dca-cU-hPG" secondAttribute="width" multiplier="0.138889" id="cNh-1Q-tUD"/>
+                                                    <constraint firstItem="rdO-g2-FQp" firstAttribute="top" secondItem="Oyc-YQ-5Gy" secondAttribute="bottom" constant="15" id="cim-jz-yNP"/>
+                                                    <constraint firstItem="Oyc-YQ-5Gy" firstAttribute="leading" secondItem="Dca-cU-hPG" secondAttribute="leading" constant="15" id="deD-wI-QOm"/>
+                                                    <constraint firstItem="PEm-Jm-7jl" firstAttribute="width" secondItem="Dca-cU-hPG" secondAttribute="width" multiplier="0.138889" id="idd-uQ-Hka"/>
+                                                    <constraint firstAttribute="trailing" secondItem="rdO-g2-FQp" secondAttribute="trailing" constant="15" id="m4v-Kd-RMa"/>
+                                                    <constraint firstItem="Oyc-YQ-5Gy" firstAttribute="top" secondItem="Dca-cU-hPG" secondAttribute="top" constant="20" id="otK-U3-Rdn"/>
+                                                    <constraint firstItem="Oyc-YQ-5Gy" firstAttribute="trailing" secondItem="X93-9g-9mI" secondAttribute="trailing" id="qBc-Dj-wa0"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLU-R5-co3" userLabel="Energy Setting View">
+                                                <rect key="frame" x="0.0" y="368" width="384" height="114"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="必要エネルギー量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2P-eG-I0z">
+                                                        <rect key="frame" x="15" y="15" width="354" height="35"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <color key="textColor" name="White String Color"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xfi-T8-Wea">
+                                                        <rect key="frame" x="15" y="65" width="354" height="34"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="めやす" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErZ-pc-p5S">
+                                                                <rect key="frame" x="0.0" y="0.0" width="76" height="34"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                                <color key="textColor" name="White String Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YMf-zq-FFm">
+                                                                <rect key="frame" x="91" y="0.0" width="200.5" height="34"/>
+                                                                <color key="backgroundColor" name="Base Color"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                            </textField>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="kcal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBq-86-nmY">
+                                                                <rect key="frame" x="306.5" y="0.0" width="47.5" height="34"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                                <color key="textColor" name="White String Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="Blue Color"/>
+                                                <constraints>
+                                                    <constraint firstItem="Xfi-T8-Wea" firstAttribute="leading" secondItem="cLU-R5-co3" secondAttribute="leading" constant="15" id="1d1-X6-tMV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="A2P-eG-I0z" secondAttribute="trailing" constant="15" id="6y6-la-o6F"/>
+                                                    <constraint firstItem="A2P-eG-I0z" firstAttribute="top" secondItem="cLU-R5-co3" secondAttribute="top" constant="15" id="Van-ck-C3b"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Xfi-T8-Wea" secondAttribute="trailing" constant="15" id="ZW0-Ee-7yb"/>
+                                                    <constraint firstItem="Xfi-T8-Wea" firstAttribute="top" secondItem="A2P-eG-I0z" secondAttribute="bottom" constant="15" id="eVM-Sj-08M"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Xfi-T8-Wea" secondAttribute="bottom" constant="15" id="l8m-EU-P2F"/>
+                                                    <constraint firstItem="A2P-eG-I0z" firstAttribute="leading" secondItem="cLU-R5-co3" secondAttribute="leading" constant="15" id="sdZ-Fx-eiP"/>
+                                                    <constraint firstItem="Xfi-T8-Wea" firstAttribute="leading" secondItem="A2P-eG-I0z" secondAttribute="leading" id="zop-AP-BNg"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="du9-dP-GvG" userLabel="Post Feed View">
+                                                <rect key="frame" x="0.0" y="507" width="384" height="70"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="k0f-Y3-aE8">
+                                                        <rect key="frame" x="15" y="19.5" width="354" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フィード表示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRn-b0-oB0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="185" height="31"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                                <color key="textColor" name="White String Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sBR-n5-zsD">
+                                                                <rect key="frame" x="305" y="0.0" width="51" height="31"/>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="Blue Color"/>
+                                                <constraints>
+                                                    <constraint firstItem="k0f-Y3-aE8" firstAttribute="centerY" secondItem="du9-dP-GvG" secondAttribute="centerY" id="DfT-je-8tw"/>
+                                                    <constraint firstItem="k0f-Y3-aE8" firstAttribute="centerX" secondItem="du9-dP-GvG" secondAttribute="centerX" id="KH0-NY-fRh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="k0f-Y3-aE8" secondAttribute="trailing" constant="15" id="mu0-PC-qdz"/>
+                                                    <constraint firstItem="k0f-Y3-aE8" firstAttribute="leading" secondItem="du9-dP-GvG" secondAttribute="leading" constant="15" id="s8P-m9-lgb"/>
+                                                    <constraint firstAttribute="height" constant="70" id="wxy-OU-UWj"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNH-EC-c4K" userLabel="Post Feed View">
+                                                <rect key="frame" x="0.0" y="602" width="384" height="70"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="z0b-IA-1BD">
+                                                        <rect key="frame" x="15" y="18" width="354" height="34"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="アプリについて" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VYO-Zf-EAw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="280.5" height="34"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                                <color key="textColor" name="White String Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bD2-tX-wv6">
+                                                                <rect key="frame" x="300.5" y="0.0" width="53.5" height="34"/>
+                                                                <state key="normal" title="詳細">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="Xxa-UZ-BM2" kind="show" id="8HM-hv-Sfy"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="bD2-tX-wv6" firstAttribute="width" secondItem="HNH-EC-c4K" secondAttribute="width" multiplier="0.138889" id="3HV-WH-ykx"/>
+                                                    <constraint firstAttribute="height" constant="70" id="Dcq-5a-ecW"/>
+                                                    <constraint firstItem="z0b-IA-1BD" firstAttribute="centerY" secondItem="HNH-EC-c4K" secondAttribute="centerY" id="cC6-IE-s8f"/>
+                                                    <constraint firstAttribute="trailing" secondItem="z0b-IA-1BD" secondAttribute="trailing" constant="15" id="dw7-VH-zG2"/>
+                                                    <constraint firstItem="z0b-IA-1BD" firstAttribute="centerX" secondItem="HNH-EC-c4K" secondAttribute="centerX" id="hGK-lL-Hzb"/>
+                                                    <constraint firstItem="z0b-IA-1BD" firstAttribute="leading" secondItem="HNH-EC-c4K" secondAttribute="leading" constant="15" id="p0d-gQ-FcI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iuD-fO-n4N">
+                                                <rect key="frame" x="0.0" y="697" width="384" height="150"/>
+                                                <color key="backgroundColor" name="Setting Mode Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="vIJ-1H-Crc"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tAG-fS-cXb" secondAttribute="trailing" id="XnD-kt-cJ9"/>
+                                            <constraint firstItem="tAG-fS-cXb" firstAttribute="leading" secondItem="07D-7x-FtC" secondAttribute="leading" id="i8J-HW-OCZ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="07D-7x-FtC" secondAttribute="bottom" id="3SE-7Y-G6I"/>
+                                    <constraint firstAttribute="trailing" secondItem="07D-7x-FtC" secondAttribute="trailing" id="5GE-2Q-T4h"/>
+                                    <constraint firstItem="07D-7x-FtC" firstAttribute="leading" secondItem="0lT-iS-nzd" secondAttribute="leading" id="Fh2-4i-dEl"/>
+                                    <constraint firstItem="07D-7x-FtC" firstAttribute="top" secondItem="0lT-iS-nzd" secondAttribute="top" id="dm9-mq-gr4"/>
+                                    <constraint firstItem="07D-7x-FtC" firstAttribute="width" secondItem="0lT-iS-nzd" secondAttribute="width" id="v3n-De-o5b"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpI-fF-4zk">
+                                <rect key="frame" x="0.0" y="712" width="414" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="3Ks-85-DDK"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Le7-fD-Rld">
+                                <rect key="frame" x="155.5" y="738.5" width="103.5" height="103.5"/>
+                                <color key="backgroundColor" name="SettingButtonColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e9I-ix-oxa"/>
+                        <color key="backgroundColor" name="Setting Mode Color"/>
+                        <constraints>
+                            <constraint firstItem="e9I-ix-oxa" firstAttribute="bottom" secondItem="Le7-fD-Rld" secondAttribute="bottom" constant="20" id="6i6-8L-AwH"/>
+                            <constraint firstItem="0lT-iS-nzd" firstAttribute="leading" secondItem="YvT-Ig-x9y" secondAttribute="leading" constant="15" id="9ny-Db-QI7"/>
+                            <constraint firstAttribute="bottom" secondItem="0lT-iS-nzd" secondAttribute="bottom" id="FKu-PH-hIB"/>
+                            <constraint firstItem="Le7-fD-Rld" firstAttribute="width" secondItem="gpI-fF-4zk" secondAttribute="width" multiplier="0.25" id="J9b-Lu-jSZ"/>
+                            <constraint firstAttribute="trailing" secondItem="0lT-iS-nzd" secondAttribute="trailing" constant="15" id="NSd-9g-eu9"/>
+                            <constraint firstItem="gpI-fF-4zk" firstAttribute="leading" secondItem="e9I-ix-oxa" secondAttribute="leading" id="e0n-F7-NXI"/>
+                            <constraint firstItem="gpI-fF-4zk" firstAttribute="bottom" secondItem="e9I-ix-oxa" secondAttribute="bottom" id="eHd-ZD-HFF"/>
+                            <constraint firstItem="0lT-iS-nzd" firstAttribute="top" secondItem="e9I-ix-oxa" secondAttribute="top" id="gev-UK-eFC"/>
+                            <constraint firstItem="e9I-ix-oxa" firstAttribute="trailing" secondItem="gpI-fF-4zk" secondAttribute="trailing" id="hdD-hL-K2d"/>
+                            <constraint firstItem="Le7-fD-Rld" firstAttribute="centerX" secondItem="YvT-Ig-x9y" secondAttribute="centerX" id="rTB-XX-HiO"/>
+                            <constraint firstItem="Le7-fD-Rld" firstAttribute="width" secondItem="Le7-fD-Rld" secondAttribute="height" multiplier="1:1" id="tHw-I9-4jZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="せってい" image="gearshape" catalog="system" id="lXY-wH-xIj"/>
+                    <navigationItem key="navigationItem" title="設定" largeTitleDisplayMode="always" id="pHz-bU-G85"/>
+                    <connections>
+                        <outlet property="buttonBackGradationView" destination="gpI-fF-4zk" id="ejC-O7-0vv"/>
+                        <outlet property="defaultSegementedControl" destination="Vfg-jN-vhH" id="fd3-Is-4Yw"/>
+                        <outlet property="ketogenicIndexTargetStepper" destination="iso-zL-ANX" id="IpM-pv-NWf"/>
+                        <outlet property="ketogenicIndexTargetTextField" destination="PEm-Jm-7jl" id="Zbh-g0-Mtt"/>
+                        <outlet property="ketogenicNumberTargetView" destination="Dca-cU-hPG" id="mff-jl-Lds"/>
+                        <outlet property="ketogenicRatioTargetStepper" destination="aYw-BP-Q9b" id="jzO-Kj-4bY"/>
+                        <outlet property="ketogenicRatioTargetTextField" destination="wst-E8-cd9" id="0fE-ZE-d65"/>
+                        <outlet property="ketogenicValueTargetStepper" destination="mxi-vX-VDG" id="LsU-38-tIz"/>
+                        <outlet property="ketogenicValueTargetTextField" destination="sr0-UM-koj" id="mhv-Nj-Uwo"/>
+                        <outlet property="postFeedView" destination="du9-dP-GvG" id="iTd-OO-veC"/>
+                        <outlet property="privacypolicyButton" destination="bD2-tX-wv6" id="Djx-Um-ldS"/>
+                        <outlet property="privacypolicyView" destination="HNH-EC-c4K" id="j4q-mY-rzB"/>
+                        <outlet property="segmentedControlView" destination="EGZ-Gp-kYM" id="iN1-90-UNW"/>
+                        <outlet property="settingSaveButton" destination="Le7-fD-Rld" id="Urw-wu-I6T"/>
+                        <outlet property="settingTEETextField" destination="YMf-zq-FFm" id="10p-7S-XMD"/>
+                        <outlet property="settingTEEView" destination="cLU-R5-co3" id="qh4-MF-SKT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rkY-pp-8PV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1420" y="1142"/>
+        </scene>
+        <!--インフォ-->
+        <scene sceneID="ndk-rR-F8N">
+            <objects>
+                <viewController id="Xxa-UZ-BM2" customClass="AboutAppTableViewController" customModule="KetoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Od6-nE-0Az">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="o9X-Ee-urG">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <color key="backgroundColor" name="Setting Mode Color"/>
+                                <color key="sectionIndexBackgroundColor" name="Setting Mode Color"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="aboutAppCell" textLabel="FNn-kJ-HBp" style="IBUITableViewCellStyleDefault" id="FYd-yn-1r4">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="47.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FYd-yn-1r4" id="x2V-67-6Ug">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="アプリについて" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FNn-kJ-HBp">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="47.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Setting Mode Color"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Setting Mode Color"/>
+                                        <connections>
+                                            <segue destination="tHb-TW-yjh" kind="show" id="lET-oc-6ba"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="expressionCell" textLabel="3ze-MP-BqC" style="IBUITableViewCellStyleDefault" id="uef-T2-kid">
+                                        <rect key="frame" x="0.0" y="92" width="414" height="47.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uef-T2-kid" id="RTq-dW-dWf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="計算式について" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3ze-MP-BqC">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="47.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Setting Mode Color"/>
+                                        <connections>
+                                            <segue destination="Yze-1T-ezv" kind="show" id="AEb-pD-VpY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="privacyPolicyCell" textLabel="6Ji-IX-gXI" style="IBUITableViewCellStyleDefault" id="RWf-Lz-2Ec">
+                                        <rect key="frame" x="0.0" y="139.5" width="414" height="47.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RWf-Lz-2Ec" id="h7R-Br-G4N">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="プライバシーポリシー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Ji-IX-gXI">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="47.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Setting Mode Color"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="aboutVersionCell" textLabel="ZeL-26-4oF" detailTextLabel="p6s-01-czz" style="IBUITableViewCellStyleValue1" id="Y0G-8W-FsU">
+                                        <rect key="frame" x="0.0" y="187" width="414" height="47.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y0G-8W-FsU" id="92L-hj-J1k">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="バージョン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZeL-26-4oF">
+                                                    <rect key="frame" x="20" y="12" width="102" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Ver" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p6s-01-czz">
+                                                    <rect key="frame" x="364.5" y="12" width="29.5" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Setting Mode Color"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qD6-mr-R69"/>
+                        <color key="backgroundColor" name="Setting Mode Color"/>
+                        <constraints>
+                            <constraint firstItem="o9X-Ee-urG" firstAttribute="top" secondItem="qD6-mr-R69" secondAttribute="top" id="OGE-wi-fje"/>
+                            <constraint firstItem="o9X-Ee-urG" firstAttribute="bottom" secondItem="qD6-mr-R69" secondAttribute="bottom" id="VBk-i4-dfq"/>
+                            <constraint firstItem="o9X-Ee-urG" firstAttribute="trailing" secondItem="qD6-mr-R69" secondAttribute="trailing" id="VcX-Uw-QSf"/>
+                            <constraint firstItem="o9X-Ee-urG" firstAttribute="leading" secondItem="qD6-mr-R69" secondAttribute="leading" id="ZyI-0A-wbN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="インフォ" id="I9y-tG-aGh"/>
+                    <connections>
+                        <outlet property="tableView" destination="o9X-Ee-urG" id="qnT-eh-z0u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hUy-cA-4Fv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562" y="1142"/>
+        </scene>
+        <!--App Description View Controller-->
+        <scene sceneID="vqh-7X-e2Y">
+            <objects>
+                <viewController id="tHb-TW-yjh" customClass="AppDescriptionViewController" customModule="KetoCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="31U-5o-R3R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HE8-z0-gDx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="740"/>
+                                <color key="backgroundColor" name="SettingClearColor"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="-1" maxX="0.0" maxY="0.0"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">本アプリは、医療機器ではないため情報提供のみを行い、診断、治療、予防などを目的としておりません。
+
+入力された栄養素量および各種設定値より、ケトン食の指標であるケトン比、ケトン指数、ケトン値を算出します。
+
+また入力された値に対して目標値に到達するための脂質量の過不足を計算し表示します。その際のエネルギー量も表示されます。
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">本アプリの開発者は小児専門の病院で勤めてきた管理栄養士です。本アプリの開発において『治療のための継続できるケトン食レシピ』、『ケトン食の基礎から実践まで』を参考図書とし、各種指標に関しては『治療のための継続できるケトン食レシピ』に則った扱いとして構成しています。</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TiH-RU-8y2"/>
+                        <color key="backgroundColor" name="Setting Mode Color"/>
+                        <constraints>
+                            <constraint firstItem="TiH-RU-8y2" firstAttribute="bottom" secondItem="HE8-z0-gDx" secondAttribute="bottom" constant="34" id="3Gi-6f-Lce"/>
+                            <constraint firstItem="HE8-z0-gDx" firstAttribute="top" secondItem="TiH-RU-8y2" secondAttribute="top" id="5ue-Na-kFA"/>
+                            <constraint firstItem="HE8-z0-gDx" firstAttribute="leading" secondItem="TiH-RU-8y2" secondAttribute="leading" id="VNT-3h-YNS"/>
+                            <constraint firstItem="TiH-RU-8y2" firstAttribute="trailing" secondItem="HE8-z0-gDx" secondAttribute="trailing" id="W6g-DC-8wO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Pnn-FS-lfu"/>
+                    <connections>
+                        <outlet property="appDescriptionTextView" destination="HE8-z0-gDx" id="NDr-a9-48b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75t-m4-yUC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="1515"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Base Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Blue Color">
+            <color red="0.52999997138977051" green="0.82099997997283936" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Setting Mode Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SettingButtonColor">
+            <color red="0.51700001955032349" green="0.81699997186660767" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SettingClearColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="White String Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
